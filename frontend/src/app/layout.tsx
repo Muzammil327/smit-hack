@@ -1,13 +1,15 @@
-import "../styles/main.scss";
+import '../styles/main.scss'
 
-export default function HomeLayout({
+export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-     <>
-      {children}
-     </>
+    <html lang="en">
+      <body>
+          {children}
+      </body>
+    </html>
   );
 }
