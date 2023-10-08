@@ -6,26 +6,7 @@ import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 
 export default function Student() {
-    const [user, setUser] = useState([]);
-
-    const headers = {
-        "Content-Type": "application/json",
-    };
-    const URL = `http://localhost:8000/api/student/get`;
-
-    useEffect(() => {
-        const getAllData = async () => {
-            const res = await axios.get(URL, { headers });
-            console.log(res.data);
-            setUser(res.data);
-        };
-
-        getAllData();
-    }, [URL, headers, user]);
-    console.log(user)
-
-
-
+ 
     const handelDelete = async (id: any) => {
         try {
             const res = await axios.delete(
@@ -75,7 +56,7 @@ export default function Student() {
                     </thead>
                     <tbody>
                         {data.map((data: any) => (
-                            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600" key={data.id}>
 
 
                                 <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
@@ -107,7 +88,7 @@ export default function Student() {
 
                     </tbody>
                 </table>
-            </div>'
+            </div>
 
 
 
