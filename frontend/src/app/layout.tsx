@@ -1,25 +1,13 @@
-import Provider from "@/src/components/Provider/page";
-import Header from "@/src/components/layouts/header/page";
-import Footer from "@/src/components/layouts/footer/page";
-import '../styles/main.scss'
-import { Component } from "react";
+import "../styles/main.scss";
 
-export default function RootLayout({
+export default function HomeLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-
-
   return (
-    <html lang="en">
-      <body>
-        <Provider>
-          <Header />
-          {children}
-          <Footer />
-        </Provider>
-      </body>
-    </html>
+     <>
+      {children}
+     </>
   );
 }

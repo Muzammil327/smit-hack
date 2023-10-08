@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
+import Provider from "../../../components/Provider/page";
 
 export const metadata: Metadata = {
   title: "Login",
@@ -10,7 +11,8 @@ export const metadata: Metadata = {
 
 export default function page() {
   return (
-    <section className="form-control">
+<Provider>
+<section className="form-control">
       <div className="image">
         <Image
           src="https://source.unsplash.com/random"
@@ -102,5 +104,6 @@ export default function page() {
         </div>
       </div>
     </section>
+</Provider>
   );
 }

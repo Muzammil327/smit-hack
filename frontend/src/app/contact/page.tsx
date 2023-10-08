@@ -1,7 +1,8 @@
 import React from 'react'
+import Provider from "../../components/Provider/page";
 
 export default function Contact() {
   return (
-    <div>Contact</div>
+    <Provider>Contact</Provider>
   )
 }
