@@ -17,6 +17,11 @@ const Navbar = [
     id:3,
     name:"Contact",
     link:"/contact"
+  },
+  {
+    id:4,
+    name:"Admin",
+    link:"/admin"
   }
 ]
 
