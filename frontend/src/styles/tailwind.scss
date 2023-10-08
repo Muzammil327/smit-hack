@@ -1,0 +1,67 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* flex */
+@layer components {
+    .c {
+        @apply flex items-center justify-center;
+    }
+
+    .b {
+        @apply flex items-center justify-between;
+    }
+}
+
+@layer components {
+
+    // hover
+    .bg1 {
+        @apply bg-emerald-600 hover:bg-emerald-500;
+    }
+
+    // dark 
+    .bg2 {
+        @apply bg-slate-50 dark:bg-slate-700;
+    }
+
+    .bg3 {
+        @apply bg-slate-50 dark:bg-slate-800;
+    }
+
+    .bg4 {
+        @apply bg-slate-200 dark:bg-slate-700;
+    }
+}
+
+/* text color */
+@layer components {
+    .t-d-w {
+        @apply text-gray-900 dark:text-white;
+    }
+
+    .t-s-4 {
+        @apply text-emerald-400;
+    }
+
+    .t-s-5 {
+        @apply text-emerald-500;
+    }
+
+}
+
+/* button */
+@layer components {
+    .button {
+        @apply focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 text-base font-semibold h-12 px-6 rounded-lg flex items-center pointer-events-auto bg1;
+    }
+
+    .input {
+        @apply block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600;
+    }
+
+    .label {
+        @apply peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6;
+    }
+}
+

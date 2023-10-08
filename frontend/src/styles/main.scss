@@ -1,0 +1,75 @@
+@import './tailwind.scss';
+
+
+@import '../components/layouts/header/header.scss';
+@import '../components/layouts/footer/footer.scss';
+@import '../components/Element/logo/logo.scss';
+@import '../app/auth/form.scss';
+
+
+
+
+
+
+
+/* ----------------------------------------------------------
+-------------------- Common Start ---------------------------
+---------------------------------------------------------- */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  @apply m-0 p-0;
+}
+
+*,
+*::after,
+*::before {
+  @apply m-0 p-0 box-border;
+}
+
+html,
+body {
+  @apply w-full scroll-smooth overflow-x-hidden;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  @apply bg-slate-50;
+}
+
+.dark body {
+  @apply bg-slate-900;
+}
+
+input,
+textarea {
+  @apply outline-none;
+}
+
+
+.section {
+  @apply my-16;
+}
+
+.error {
+  color: #008B62;
+  text-shadow:
+    1px 1px 1px #00593E,
+    2px 2px 1px #00593E,
+    3px 3px 1px #00593E,
+    4px 4px 1px #00593E,
+    5px 5px 1px #00593E,
+    6px 6px 1px #00593E,
+    7px 7px 1px #00593E,
+    8px 8px 1px #00593E,
+    25px 25px 8px rgba(0, 0, 0, 0.2);
+}

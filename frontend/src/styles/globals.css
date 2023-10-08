@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Heading 1 Styles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0.6rem 0;
+}
+
+h5 {
+    @apply lg:text-[1.50rem] md:text-[1.25rem] text-[1.2rem];
+}
+h6 {
+ @apply lg:text-[1.75rem] md:text-[1.50rem] text-[1.5rem];
+}
+
+/* Paragraph Styles */
+/* p {
+  font-family: "Arial", sans-serif;
+  line-height: 2!important;
+  letter-spacing: 1.8;
+  @apply text-gray-600 lg:text-xl md:text-lg text-base mb-4;
+} */
+.article strong {
+    @apply font-bold text-black;
+}
+/* List styles */
+.article ul,
+.article ol {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  /* Style the list items */
+  .article li {
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Add a pseudo-element for bullet point */
+  .article ul li::before {
+    content: "•";
+    margin-right: 10px;
+    color: #007bff;
+  }
+
+
+@layer components {
+  /* text color */
+  .t-bw {
+    @apply text-slate-900 hover:t2 dark:text-gray-100;
+  }
+  .tw {
+    @apply text-white;
+  }
+  .tb {
+    @apply text-black;
+  }
+  .t2{
+    @apply text-emerald-500 dark:text-emerald-300;
+  }
+/* background color */
+  .bg1 {
+    @apply bg-emerald-600 hover:bg-emerald-500;
+  }
+  .bg2 {
+    @apply  dark:bg-slate-700 bg-slate-900;
+  }
+}
+
+/* bg-emerald-200	 */
+
+
+
+
+
+
+
+
+
+
+
+.wb {
+  @apply text-white dark:text-slate-900;
+}
+.bw {
+  @apply dark:text-white text-slate-900;
+}
+.sc{
+  @apply text-sky-500;
+}
+.sch{
+  @apply hover:text-sky-500 hover:dark:text-sky-500;
+}
+.t4 {
+  transition: 0.4s;
+}
+.t5 {
+  transition: 0.5s;
+}
+.t6 {
+  transition: 0.6s;
+}
+/* ----------------------------------------------------------
+-------------------- Button Start ---------------------------
+---------------------------------------------------------- */
+
+.button {
+  @apply bg1 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 text-base tw font-semibold h-12 px-6 rounded-lg flex items-center pointer-events-auto;
+}
+.bg {
+  @apply dark:bg-slate-700 dark:hover:bg-slate-600 bg-slate-900 hover:bg-slate-700;
+}
+
+

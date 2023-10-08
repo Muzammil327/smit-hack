@@ -1,0 +1,6 @@
+
+User-agent: *
+Disallow: /auth/
+Allow: /
+
+Sitemap: https://www.codebloglab.website/sitemap-index.xml

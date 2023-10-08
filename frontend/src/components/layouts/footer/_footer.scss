@@ -1,0 +1,98 @@
+footer {
+    @apply bg3 md:pt-28 pt-16 z-20 relative mt-5;
+
+    .inner {
+        @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:pb-8 md:pb-6 pb-4;
+
+        .item1 {
+
+
+            .text {
+                p {
+                    @apply t-d-w my-8 text-base;
+                }
+            }
+
+            .social {
+                ul {
+                    @apply flex gap-4;
+
+                    li {
+                        @apply dark:border-white border-black t-d-w c text-lg border-2 p-2 lg:h-11 h-10 lg:w-11 w-10 rounded-lg hover:t-s-4 transition-all hover:duration-300;
+
+                        &:hover {
+                            transform: rotate(360deg) scale(1.5);
+                            @apply transition-all rounded-full;
+                        }
+                    }
+                }
+            }
+        }
+
+        .item2 {
+            @apply flex md:flex-row flex-col md:gap-20;
+
+            .explore,
+            .information {
+                .head {
+                    h4 {
+                        @apply md:mt-0 mt-5 t-s-5 text-2xl mb-6 font-semibold;
+                    }
+                }
+
+                .link {
+
+                    ul {
+                        @apply flex flex-col gap-4 t-d-w text-base;
+
+                        li {
+                            @apply hover:ml-2 transition-all;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .item3 {
+            .head {
+                h4 {
+                    @apply md:mt-0 mt-5 t-s-5 text-2xl mb-6 font-semibold;
+                }
+            }
+
+            .text {
+
+                p {
+                    @apply t-d-w leading-7 text-base;
+                }
+            }
+
+            form {
+                @apply mt-4 relative;
+
+                input {
+                    @apply bg4 px-4 h-11 w-full rounded outline-none block;
+                }
+
+                button {
+                    @apply absolute bg1 top-0 right-0 h-11 text-center text-white px-4;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        @apply py-3 w-full;
+
+        .text {
+            p {
+                @apply text-center t-d-w mb-0 text-base;
+
+                a {
+                    @apply pl-2 t-d-w hover:t-s-4 transition-all;
+                }
+            }
+        }
+    }
+}
