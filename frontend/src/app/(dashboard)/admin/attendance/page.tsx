@@ -20,11 +20,10 @@ export default function Student() {
 
 
     return (
-        <div className="p-4 sm:ml-64 bg-red-400 h-[400px]">
+        <div className="p-4 sm:ml-64 bg-red-400 min-h-[400px]">
             <h1 className='c text-4xl text-white my-10'>Total Attendence</h1>
             <div className=" overflow-x-auto shadow-md sm:rounded-lg mt-5">
 
-                <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                     <div className='b my-3'>
                         <h1 className='text-white'>Attendence</h1>
                         <div>
@@ -33,6 +32,7 @@ export default function Student() {
                         <Link href="/admin/attendance/add" className="font-medium bg-blue-600 py-2 px-3 text-white dark:text-blue-500 hover:underline rounded mx-2">Absent</Link>
                         </div>
                     </div>
+                <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                     <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
                             <th scope="col" className="px-6 py-3">
