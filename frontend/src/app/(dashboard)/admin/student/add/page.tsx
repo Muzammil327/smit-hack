@@ -1,12 +1,10 @@
 "use client";
 import React from "react";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import axios from "axios";
 
 const AddTask = () => {
-  const router = useRouter();
   const [loadings, setLoadings] = useState(false);
 const port = 8000
   const [data, setData] = useState({
@@ -46,7 +44,6 @@ alert("ASdf");
           course: "",
           phone: "",
         });
-        router.push("/");
       }
     } catch (error) {
       console.log(error);
