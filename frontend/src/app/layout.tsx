@@ -1,7 +1,7 @@
-'use client'
-import "../styles/main.scss";
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import Provider from "@/src/components/Provider/page";
+import Header from "@/src/components/layouts/header/page";
+import Footer from "@/src/components/layouts/footer/page";
+import '../styles/main.scss'
 
 export default function RootLayout({
   children,
@@ -9,12 +9,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-
-    
-        <>
-        {children}
-        <ToastContainer />
-        </>
-  
+    <html lang="en">
+      <body>
+        <Provider>
+          <Header />
+          {children}
+          <Footer />
+        </Provider>
+      </body>
+    </html>
   );
 }
