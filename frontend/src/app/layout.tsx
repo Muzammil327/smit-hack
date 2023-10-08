@@ -9,16 +9,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const isBlogPage = Component.defaultProps?.router.pathname.startsWith('/blog');
 
-  // Use the layout if it's not a blog page
-  if (!isBlogPage) {
-    return (
-      <Provider>
-           {children}
-      </Provider>
-    );
-  }
 
   return (
     <html lang="en">
